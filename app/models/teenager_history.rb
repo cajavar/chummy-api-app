@@ -1,0 +1,2 @@
+class TeenagerHistory < ApplicationRecord
+end

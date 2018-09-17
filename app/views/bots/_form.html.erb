@@ -1,0 +1,47 @@
+<%= form_with(model: bot, local: true) do |form| %>
+  <% if bot.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bot.errors.count, "error") %> prohibited this bot from being saved:</h2>
+
+      <ul>
+      <% bot.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id %>
+    <%= form.text_field :id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :token_face %>
+    <%= form.text_field :token_face %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_date %>
+    <%= form.datetime_select :start_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_date %>
+    <%= form.datetime_select :end_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :token_id %>
+    <%= form.text_field :token_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :teenager_id %>
+    <%= form.text_field :teenager_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

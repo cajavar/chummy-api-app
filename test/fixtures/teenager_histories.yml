@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 
+  registry_date: 2018-09-17 13:33:34
+  token: MyString
+
+two:
+  id: 
+  registry_date: 2018-09-17 13:33:34
+  token: MyString

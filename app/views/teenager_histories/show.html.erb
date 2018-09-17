@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @teenager_history.id %>
+</p>
+
+<p>
+  <strong>Registry date:</strong>
+  <%= @teenager_history.registry_date %>
+</p>
+
+<p>
+  <strong>Token:</strong>
+  <%= @teenager_history.token %>
+</p>
+
+<%= link_to 'Edit', edit_teenager_history_path(@teenager_history) %> |
+<%= link_to 'Back', teenager_histories_path %>

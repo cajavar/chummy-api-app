@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Teenager Histories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Registry date</th>
+      <th>Token</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @teenager_histories.each do |teenager_history| %>
+      <tr>
+        <td><%= teenager_history.id %></td>
+        <td><%= teenager_history.registry_date %></td>
+        <td><%= teenager_history.token %></td>
+        <td><%= link_to 'Show', teenager_history %></td>
+        <td><%= link_to 'Edit', edit_teenager_history_path(teenager_history) %></td>
+        <td><%= link_to 'Destroy', teenager_history, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Teenager History', new_teenager_history_path %>

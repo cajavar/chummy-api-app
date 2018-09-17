@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Teenagers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Identification</th>
+      <th>Name</th>
+      <th>Location</th>
+      <th>Telephone</th>
+      <th>Address</th>
+      <th>Id facebook</th>
+      <th>Email</th>
+      <th>Psychologist</th>
+      <th>Teenager history</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @teenagers.each do |teenager| %>
+      <tr>
+        <td><%= teenager.id %></td>
+        <td><%= teenager.identification %></td>
+        <td><%= teenager.name %></td>
+        <td><%= teenager.location %></td>
+        <td><%= teenager.telephone %></td>
+        <td><%= teenager.address %></td>
+        <td><%= teenager.id_facebook %></td>
+        <td><%= teenager.email %></td>
+        <td><%= teenager.psychologist_id %></td>
+        <td><%= teenager.teenager_history_id %></td>
+        <td><%= link_to 'Show', teenager %></td>
+        <td><%= link_to 'Edit', edit_teenager_path(teenager) %></td>
+        <td><%= link_to 'Destroy', teenager, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Teenager', new_teenager_path %>

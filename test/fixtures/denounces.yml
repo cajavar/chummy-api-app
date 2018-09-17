@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 
+  facts: MyText
+  observations: MyText
+  denounce_type_id: 
+  bot_id: 
+
+two:
+  id: 
+  facts: MyText
+  observations: MyText
+  denounce_type_id: 
+  bot_id: 

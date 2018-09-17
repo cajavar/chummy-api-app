@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @teenager.id %>
+</p>
+
+<p>
+  <strong>Identification:</strong>
+  <%= @teenager.identification %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @teenager.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @teenager.location %>
+</p>
+
+<p>
+  <strong>Telephone:</strong>
+  <%= @teenager.telephone %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @teenager.address %>
+</p>
+
+<p>
+  <strong>Id facebook:</strong>
+  <%= @teenager.id_facebook %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @teenager.email %>
+</p>
+
+<p>
+  <strong>Psychologist:</strong>
+  <%= @teenager.psychologist_id %>
+</p>
+
+<p>
+  <strong>Teenager history:</strong>
+  <%= @teenager.teenager_history_id %>
+</p>
+
+<%= link_to 'Edit', edit_teenager_path(@teenager) %> |
+<%= link_to 'Back', teenagers_path %>

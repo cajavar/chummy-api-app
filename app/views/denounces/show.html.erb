@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @denounce.id %>
+</p>
+
+<p>
+  <strong>Facts:</strong>
+  <%= @denounce.facts %>
+</p>
+
+<p>
+  <strong>Observations:</strong>
+  <%= @denounce.observations %>
+</p>
+
+<p>
+  <strong>Denounce type:</strong>
+  <%= @denounce.denounce_type_id %>
+</p>
+
+<p>
+  <strong>Bot:</strong>
+  <%= @denounce.bot_id %>
+</p>
+
+<%= link_to 'Edit', edit_denounce_path(@denounce) %> |
+<%= link_to 'Back', denounces_path %>

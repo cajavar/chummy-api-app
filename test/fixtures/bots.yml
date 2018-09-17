@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 
+  token_face: MyString
+  start_date: 2018-09-17 13:48:50
+  end_date: 2018-09-17 13:48:50
+  token_id: 
+  teenager_id: 
+
+two:
+  id: 
+  token_face: MyString
+  start_date: 2018-09-17 13:48:50
+  end_date: 2018-09-17 13:48:50
+  token_id: 
+  teenager_id: 

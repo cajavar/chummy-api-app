@@ -1,0 +1,32 @@
+<%= form_with(model: teenager_history, local: true) do |form| %>
+  <% if teenager_history.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(teenager_history.errors.count, "error") %> prohibited this teenager_history from being saved:</h2>
+
+      <ul>
+      <% teenager_history.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id %>
+    <%= form.text_field :id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :registry_date %>
+    <%= form.datetime_select :registry_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :token %>
+    <%= form.text_field :token %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
