@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Psychologists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Identification</th>
+      <th>Name</th>
+      <th>Location</th>
+      <th>Cv</th>
+      <th>Address</th>
+      <th>Telephone</th>
+      <th>Id facebook</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @psychologists.each do |psychologist| %>
+      <tr>
+        <td><%= psychologist.id %></td>
+        <td><%= psychologist.identification %></td>
+        <td><%= psychologist.name %></td>
+        <td><%= psychologist.location %></td>
+        <td><%= psychologist.cv %></td>
+        <td><%= psychologist.address %></td>
+        <td><%= psychologist.telephone %></td>
+        <td><%= psychologist.id_facebook %></td>
+        <td><%= psychologist.email %></td>
+        <td><%= link_to 'Show', psychologist %></td>
+        <td><%= link_to 'Edit', edit_psychologist_path(psychologist) %></td>
+        <td><%= link_to 'Destroy', psychologist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Psychologist', new_psychologist_path %>

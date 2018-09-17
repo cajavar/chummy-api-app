@@ -1,0 +1,62 @@
+<%= form_with(model: psychologist, local: true) do |form| %>
+  <% if psychologist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(psychologist.errors.count, "error") %> prohibited this psychologist from being saved:</h2>
+
+      <ul>
+      <% psychologist.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id %>
+    <%= form.text_field :id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :identification %>
+    <%= form.number_field :identification %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :location %>
+    <%= form.text_field :location %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cv %>
+    <%= form.text_area :cv %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :telephone %>
+    <%= form.number_field :telephone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_facebook %>
+    <%= form.text_field :id_facebook %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
